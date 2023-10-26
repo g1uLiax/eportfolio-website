@@ -1,5 +1,6 @@
 'use strict';
 
+
 const switcher= document.querySelector('.btn');
 
 switcher.addEventListener ('click', function() {
@@ -9,7 +10,7 @@ switcher.addEventListener ('click', function() {
     const className = document.body.className;
     if(className == "light-theme") {
         this.textContent = "Dark";
-    } else {
+    } else if(className == "dark-theme") {
         this.textContent = "Light";
     }
 
